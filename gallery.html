@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - 2x2 Pixel Team</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="2x2 Pixel Team Logo" class="logo">
+        <div class="toppage">
+            <a href="index.html">Main Page</a>
+            <a href="team-members.html">Team members</a>   
+            <a href="hour-of-code.html">Hour of Code</a>              
+            <a href="web-project.html">Web Project</a>
+            <a href="code-artist.html">Code Artist</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="galleryPagesection">
+            <h1>Our Team Gallery</h1>
+            <div class="gallerypart">
+
+                <img src="media/IMG_2561-min.jpg"            alt="Image 1"  class="gallery-photos">
+                <img src="media/IMG_2562-min.jpg"            alt="Image 2"  class="gallery-photos">
+                <img src="media/5357242485488870828-min.jpg" alt="Image 3"  class="gallery-photos">
+                <img src="media/5357242485488870825-min.jpg" alt="Image 4"  class="gallery-photos">
+                <img src="media/5357242485488870821-min.jpg" alt="Image 5"  class="gallery-photos">
+                <img src="media/5357242485488870829-min.jpg" alt="Image 6"  class="gallery-photos">
+                <img src="media/5357242485488870813-min.jpg" alt="Image 7"  class="gallery-photos">
+                <img src="media/5357242485488870816-min.jpg" alt="Image 8"  class="gallery-photos">
+                <img src="media/5357242485488870824-min.jpg" alt="Image 9"  class="gallery-photos">
+                <img src="media/5357242485488870823-min.jpg" alt="Image 10" class="gallery-photos">
+                <img src="media/5357242485488870815-min.jpg" alt="Image 11" class="gallery-photos">
+                <img src="media/5357242485488870826-min.jpg" alt="Image 12" class="gallery-photos">
+                <img src="media/5357242485488870808-min.jpg" alt="image 13" class="gallery-photos">
+                 
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerfirst">
+            <div class="logo-ada-pixel">
+                <img src="media/ada_logo_color.png" class="ada-logo">
+                <img src="logo.png" class="pixel-logo">
+            </div>
+            <div class="footer-words">
+                <p>&copy; 2024 2x2 Pixel Team. All Rights Reserved.</p>
+                <p>For Better Future</p>
+            </div>
+            <div class="socialmedia">
+                <a href=" " target="_blank" class="socialmediaicon">Facebook</a>
+                <a href=" " target="_blank" class="socialmediaicon">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+        const links = document.querySelectorAll(".toppage a") ;
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+    
+    
+        </script>
+</body>
+</html>
+

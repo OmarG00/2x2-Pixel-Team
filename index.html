@@ -1,0 +1,108 @@
+<!DOCTYPE html>      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="2x2 Pixel Team Logo" class="logo">
+        <div class="toppage">
+            
+            <a href="index.html">Main Page</a>
+            <a href="team-members.html">Team members</a>   
+            <a href="hour-of-code.html">Hour of Code</a>              
+            <a href="web-project.html">Web Project</a>
+            <a href="code-artist.html">Code Artist</a>
+            <a href="gallery.html">Gallery</a>
+                
+           
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Who are we?</h2>
+    <p>
+        We are the <strong>2x2 Pixel Team</strong>, a passionate group of students from <strong>ADA University</strong>, dedicated to sharing the joy of coding with the next generation.
+    </p>
+    <p>
+        Our team members are:
+    </p>
+    <ul>
+        <li><strong>Omar Gadimli</strong> – a student of BSCS 2028.</li>
+        <li><strong>Banu Ibrahimli</strong> – a student of BSIT 2028</li>
+        <li><strong>Aytaj Mammadova</strong> – a student of BSIT 2028.</li>
+        <li><strong>Shamir Valiyev</strong> – a student of BSIT 2025</li>
+    </ul>
+    <p>
+        Together, we believe in the power of coding to unlock creativity, transform lives, and open new opportunities.
+    </p>
+    
+        </section>
+
+        <section id="projects">
+            <h2>Our Projects</h2>
+            <p>We have completed 3 projects since 2x2 Pixel Team was founded:</p>
+            <ul>
+                <li><strong>How hardware works</strong> : <em>Experimenting with Logic Gates</em></li>
+                <li><strong>How software works</strong> : <em>Organizing Hour of Code event</em></li>
+                <li><strong>How websites work</strong>  : <em>Developing our team website using HTML, CSS and JavaScript</em></li>
+            </ul>
+        </section>
+
+        <section id="hw01">
+            <h2>Logic Gates</h2>
+            <p>Our first project was to build logic gates such as AND, OR, NOR, NOT, NAND, XOR. That project served as an introduction to learn how hardware works.</p> 
+        </section>
+
+        <section id="hw02">
+            <h2>Hour of Code event</h2>
+            <p>The second project was organizing Hour of Code event. Our aim was to introduce basics of coding to children. In order to achieve that goal, we chose to tutor <u>Classic Maze puzzle</u>. The reason behind our decision was the tasks being simple enough for children to understand, and the inclusion of characters from popular games and animation films.</p>
+            <p>We are proud to say that we have achieved our goal. Participants were excited to solve the taks and learn something new. Furthermore, some of them even asked us where they could find more puzzles to solve!</p>
+        </section>
+
+        <section id="hw03">
+            <h2>Our Team Website</h2>
+            <p>What you are looking at is our 3rd project =)</p>
+            <p>This website is designed to be our official team website where we will document our projects! For now, we mainly focused on Hour of Code event.</p>
+            <p>Creating our team website was a great opportunity to improve our web developing skills. We hope that documenting our projects using this website will evoke enthusiasm and encourage others to learn how to code.</p>
+        </section>
+
+        <section id="lastwords">
+            <h2>Vision of 2x2 Pixel Team</h2>
+            <p>Our vision is to build a better future by encouraging people to learn how to code, because we believe that anyone can code. Let's work together for better future!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerfirst">
+            <div class="logo-ada-pixel">
+                <img src="media/ada_logo_color.png" class="ada-logo">
+                <img src="logo.png" class="pixel-logo">
+            </div>
+            <div class="footer-words">
+                <p>For Better Future</p>
+                <p>&copy; 2024 2x2 Pixel Team. All Rights Reserved.</p>
+                
+            </div>
+            <div class="socialmedia">
+                <a href=" " target="_blank" class="socialmediaicon">Facebook</a>
+                <a href="https://www.instagram.com/omer.gdml/profilecard/?igsh=MWRkc3llbTd1MHFkeA==" target="_blank" class="socialmediaicon">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+        const links = document.querySelectorAll(".toppage a") ;
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+    
+    
+        </script>
+</body>
+</html>

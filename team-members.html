@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2x2 Pixel Team</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Team 90-ADA University" class="logo">
+        <div class="toppage">
+            
+            <a href="index.html">Main Page</a>
+            <a href="team-members.html">Team members</a>   
+            <a href="hour-of-code.html">Hour of Code</a>              
+            <a href="web-project.html">Web Project</a>
+            <a href="code-artist.html">Code Artist</a>
+            <a href="gallery.html">Gallery</a>
+            
+       
+    </div>
+    </header>
+
+    <main>
+        <section id="team-idk">
+            <h1>Meet Our 2x2 Pixel Team</h1>
+            <p>For Better Future</p>
+        </section>
+
+        <section id="team-members">
+            <article class="team-member">
+                <img src="picturesofmembers/Omarpicture-min.png" alt="Omar Gadimli" class="team2x2pixel-photo">
+                <h2>Omar Gadimli</h2>
+                <p><strong>BSCS 2028 </strong> student at ADA University.</p>
+                <p>I have a passion for math. Due to this passion, I participated in many math olympiads. I have two national olympiad medals, and I represented Azerbaijan two times in the international stage-  one Honorable Mention and one Bronze Medal. I believe in the importance of choosing ADA university for my future career.</p>
+            <br>
+            <br>
+            <a href="https://www.codecademy.com/profiles/OmarGadimli" class="codecademylink">Codecademy: Omar Gadimli</a>
+            </article>
+        
+
+            <article class="team-member">
+                <img src="picturesofmembers/banuibrahimli.jpg" alt="Banu Ibrahimli" class="team2x2pixel-photo">
+                <h2>Banu Ibrahimli</h2>
+                <p><strong>BSIT 2028</strong> student at ADA University.</p>
+                <p>I am a first-year IT student with a deep passion for technology. I have participated in contests and olympiads in informatics during my school years. To further develop my skills, I chose Inforamation Technologies major at ADA University.</p>
+                <br>
+                <br>
+                <br>
+                
+                <a href = "https://www.codecademy.com/profiles/BanuIbrahimli" class="codecademylink">Codecademy: Banu Ibrahimli</a>
+            </article>
+
+            <article class="team-member">
+                <img src="picturesofmembers/aytaj.jpeg" alt="Aytaj Mammadova" class="team2x2pixel-photo">
+                <h2>Aytaj Mammadova</h2>
+                <p><strong>BSIT 2028</strong> student at ADA University.</p>
+                <p>I am a first-year student, and my favorite subject is physics. I have quite a few hobbies, including swimming and drawing, which are my favorites. I believe choosing ADA University was one of the greatest decisions I have made, as the university provides valuable knowledge, numerous opportunities, and support for developing our hobbies.</p>
+                 <br>
+                 <a href="https://www.codecademy.com/profiles/AytajMammadova" class="codecademylink">Codecademy: Aytaj Mammadova</a>
+            </article>
+
+            <article class="team-member">
+                <img src="picturesofmembers/shamir2.jpg" alt="Shamir Valiyev" class="team2x2pixel-photo">
+                <h2>Shamir Valiyev</h2>
+                <p><strong>BSIT 2025</strong> student at ADA University.</p>
+                <P>Hi my name is Shamir Valiyev. BSIT2025. I love playing basketball and tennis. In my free time I often read some historical books and try to learn new historical things. I don’t have favorite subject but I love doing mathematics during doing nothing. I do have some awards and won some medals and prizes from basketball and tennis.</P>
+                <br>
+                <a href="https://www.codecademy.com/profiles/svaliyev11275" class="codecademylink">Codecademy: Shamir Valiyev</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerfirst">
+            <div class="logo-ada-pixel">
+                <img src="media/ada_logo_color.png" class="ada-logo">
+                <img src="logo.png" class="pixel-logo">
+            </div>
+            <div class="footer-words">
+                <p>For Better Future</p>
+                <p>&copy; 2024 2x2 Pixel Team. All Rights Reserved.</p>
+                
+            </div>
+            <div class="socialmedia">
+                <a href=" " target="_blank" class="socialmediaicon">Facebook</a>
+                <a href="https://www.instagram.com/omer.gdml/profilecard/?igsh=MWRkc3llbTd1MHFkeA==" target="_blank" class="socialmediaicon">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+        const links = document.querySelectorAll(".toppage a") ;
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+    
+    
+        </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Artist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <header>
+        <img src="logo.png" alt="2x2 Pixel Team Logo" class="logo">
+        <div class="toppage">
+            
+            <a href="index.html">Main Page</a>
+            <a href="team-members.html">Team members</a>   
+            <a href="hour-of-code.html">Hour of Code</a>              
+            <a href="web-project.html">Web Project</a>
+            <a href="code-artist.html">Code Artist</a>
+            <a href="gallery.html">Gallery</a>
+            
+       
+    </div>
+    </header>
+   
+
+
+    <main>
+        <section id="artist-area">
+            <h1>Code Artist Game</h1>
+            <p>Enter a number between 1-10 to draw shapes:</p>
+            <input type="number" id="numberenter" min="1" max="10" placeholder="Please Enter a number">
+            <button id="draw-button">Draw Shapes</button>
+            <div  class="canvas" id="canvas"></div>
+        </section>
+    </main>
+
+
+
+
+
+   
+    <footer>
+        <div class="footerfirst">
+            <div class="logo-ada-pixel">
+                <img src="media/ada_logo_color.png" class="ada-logo">
+                <img src="logo.png" class="pixel-logo">
+            </div>
+            <div class="footer-words">
+                <p>For Better Future</p>
+                <p>&copy; 2024 2x2 Pixel Team. All Rights Reserved.</p>
+                
+            </div>
+            <div class="socialmedia">
+                <a href=" " target="_blank" class="socialmediaicon">Facebook</a>
+                <a href="https://www.instagram.com/omer.gdml/profilecard/?igsh=MWRkc3llbTd1MHFkeA==" target="_blank" class="socialmediaicon">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+        const links = document.querySelectorAll(".toppage a") ;
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+    
+    
+        </script>
+</body>
+</html>
